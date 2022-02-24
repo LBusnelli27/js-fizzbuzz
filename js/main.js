@@ -1,17 +1,19 @@
-let box = document.createElement("div");
-box.classList.add("col-2" , "p4" , "text-center" , "bg-warning" , "my-box");
 
 
 for (let i = 1; i < 101; i++) {
 
+    let text = i;
     if (((i % 3) == 0) && ((i % 5) == 0)) {
-        console.log('FizzBuzz');
+        text = 'FizzBuzz';
     } else if ((i % 3) == 0) {
-        console.log('Fizz');
+        text = 'Fizz';
     } else if ((i % 5) == 0) {
-        console.log('Buzz');
-    } else {
-        document.getElementsByClassName("my-row-boxes").innerHTML = box;
-        document.getElementsByClassName("my-box").innerHTML = "ciao";
+        text = 'Buzz';
     }
+
+    
+    let box = document.createElement("div");
+    box.classList.add("col-2" , "p4" , "text-center" , "bg-warning" , "my-box");
+    document.getElementById("my-row-boxes").append(box);
+    box.innerHTML = text;
 }
