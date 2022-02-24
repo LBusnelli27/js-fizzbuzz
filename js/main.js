@@ -1,5 +1,7 @@
 const userBtnGen = document.getElementById('my-btn-add-10');
 userBtnGen.addEventListener('click', function() {
+    console.log('Added 10 boxes - btn pressed');
+
     for (let i = 1; i < 11; i++) {
 
         let text = i;
