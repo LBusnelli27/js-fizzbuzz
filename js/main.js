@@ -1,4 +1,5 @@
-let rowBoxes = document.getElementById('my-row-boxes');
+let box = document.createElement("div");
+box.classList.add("col-2" , "p4" , "text-center" , "bg-warning" , "my-box");
 
 
 for (let i = 1; i < 101; i++) {
@@ -10,10 +11,7 @@ for (let i = 1; i < 101; i++) {
     } else if ((i % 5) == 0) {
         console.log('Buzz');
     } else {
-        let box = document.createElement("div");
-        box.classList.add("col-2" , "p4" , "text-center" , "bg-warning" , "my-box");
-        rowBoxes.innerHTML += box;
-        let boxContent = document.getElementsByClassName("my-box");
-        boxContent.innerHTML = "ciao"; 
+        document.getElementsByClassName("my-row-boxes").innerHTML = box;
+        document.getElementsByClassName("my-box").innerHTML = "ciao";
     }
 }
