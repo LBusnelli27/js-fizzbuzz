@@ -11,9 +11,9 @@ for (let i = 1; i < 101; i++) {
         text = 'Buzz';
     }
 
-    
+
     let box = document.createElement("div");
-    box.classList.add("col-2" , "p4" , "text-center" , "bg-warning" , "my-box");
+    box.classList.add("col-3" , "p4" , "text-center" , "bg-warning" , "my-box");
     document.getElementById("my-row-boxes").append(box);
     box.innerHTML = text;
 }
