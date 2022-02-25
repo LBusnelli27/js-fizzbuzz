@@ -35,7 +35,7 @@ userBtnGen.addEventListener('click', function() {
     }
 });
 
-// ! Questo codice sotto commentato crea tutti i quadrati fino a 100
+// ! The code under this line is used to crate all the 100 boxes when you open the html
 
 // for (let i = 1; i < 101; i++) {
 
